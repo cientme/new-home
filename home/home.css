@@ -1,0 +1,1410 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ################ (screen-1) css for big screen as pic start here ########### */
+/* ============= story-gallery css start here =========== */
+
+
+.story-gallery{
+    width: 76vw;
+    height: 28vh;
+    /* background-color: crimson; */
+    border: 1px solid #dadada;
+    border-radius: 1vw;
+    margin: 1vh 1vw;
+    padding: 1.5vw 0vw;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+   
+    
+}
+
+/* %%%%%%%%%%%%%%%%%% remove scroll webkit css %%%%%%%%%%%%%%%%%% */
+.story-gallery::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* %%%%%%%%%%%%%%%%%% story div property css %%%%%%%%%%%%%%%%%% */
+.story{
+    width: 10vw;
+    height: 18vh;
+    /* background-color: royalblue */
+    margin: 1vw 0.1vw;
+    padding: 1vw;
+}
+
+
+/* %%%%%%%%%%%%%%%%%% story-gallery <a> tag css %%%%%%%%%%%%%%%%%% */
+.story-gallery a{
+    text-decoration: none;
+    color: black;
+}
+
+/* %%%%%%%%%%%%%%%%%% story profile-pic css %%%%%%%%%%%%%%%%%% */
+.story-gallery a img{
+    width: 8vw;
+    height: 8vw;
+    margin-top: 1vw;
+    /* margin-left: -1vw; */
+    border: white;
+    box-shadow: 
+    0 0 0 0.2vw white,
+    0 0 0 0.4vw red;
+    border-radius: 50%;
+}
+
+/* %%%%%%%%%%%%%%%%%% story username css %%%%%%%%%%%%%%%%%% */
+.story-gallery a p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-left: -1vw;
+    text-align: center;
+}
+
+/* ============= story-gallery css end here =========== */
+
+
+
+/* =============== post-content start here ============  */
+
+/* %%%%%%%%%%%%%%%%%% post-content css %%%%%%%%%%%%%%%%%% */
+.post-content{
+    width: 76vw;
+    margin: 2vw 1vw;
+    /* background-color: rosybrown; */
+    border-bottom: 0.1vw solid #9a9a9a;
+    
+
+}
+
+/* %%%%%%%%%%%% upper part of the post content css  %%%%%%%%%%%%% */
+.header-post-content{
+    width: 76vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+/* %%%%%%%%%%%% header-post-content css for <a> tag  %%%%%%%%%%%%% */
+.header-post-content a{
+    text-decoration: none;
+    color: black;
+    margin: 0.3vw;
+}
+
+/* %%%%%%%%%%%% user post profile pic css  %%%%%%%%%%%%% */
+.header-post-content img{
+    width: 6vw;
+    height: 6vw;
+    border: white;
+    box-shadow: 
+    0 0 0 0.15vw white,
+    0 0 0 0.3vw red;
+    border-radius: 50%;
+
+}
+
+/* %%%%%%%%%%%% post usernams css  %%%%%%%%%%%%% */
+.header-post-content span{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% 3 verticall dots on header-post-content css  %%%%%%%%%%%%% */
+.header-post-content .vertical-dots{
+    font-size: 1.5vw;
+    position: relative;
+    left: 48vw;
+}
+
+/* %%%%%%%%%%%% post image css  %%%%%%%%%%%%% */
+.post-content .post-img{
+    width: 76vw;
+    min-height: 25vh;
+    max-height: 80vh;
+    border-radius: 0.5vw;
+    
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for ul tag */
+.post-content ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for <a> tag */
+.post-content li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for li tag  */
+.post-content li{
+    margin-right: 1vw;
+    font-size: 2vw;
+    
+}
+
+/* %%%%%%%%%%%% post share and save css %%%%%%%%%%%%% */
+.post-content li .share-save{
+    position: relative;
+    left: 59vw;
+    padding: 0 1vw;
+}
+
+/* %%%%%%%%%%%% number of likes on post css %%%%%%%%%%%%%% */
+.post-content .likes{
+    display: inline;
+    margin-right: 0.5vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+/* %%%%%%%%%%%% number of superlikes on post css %%%%%%%%%%%%%% */
+.post-content .superlikes{
+    display: inline;
+    
+    margin-left: 0.5vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+/* %%%%%%%%%%%% caption of post css %%%%%%%%%%%%%% */
+.post-content .caption{
+    display: flex;
+    align-items: center;
+}
+
+/* %%%%%%%%%%%% user-img of caption of post css %%%%%%%%%%%%%% */
+.post-content .caption img{
+    width: 3vw;
+    height: 3vw;
+    margin: 1vw 0;
+    border: white;
+    box-shadow: 
+    0 0 0 0.10vw white,
+    0 0 0 0.20vw red;
+    border-radius: 50%;
+
+}
+
+/* %%%%%%%%%%%% all post-content <a> tag css %%%%%%%%%%%%%% */
+.post-content a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* %%%%%%%%%%%% caption username of post css %%%%%%%%%%%%%% */
+.post-content .caption .username{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+
+/* %%%%%%%%%%%% actual caption paragraph of post css %%%%%%%%%%%%%% */
+.post-content .caption p{
+    margin-top: 0;
+    margin-left: 0.5vw;
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+/* %%%%%%%%%%%% red more  post css %%%%%%%%%%%%%% */
+.post-content .more{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #9a9a9a;
+}
+
+/* %%%%%%%%%%%% view all comments of post css %%%%%%%%%%%%%% */
+.post-content  .view-all-comment{
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: #9a9a9a;
+    margin-top: 2vw;
+    
+}
+
+/* %%%%%%%%%%%% username of comment on post css %%%%%%%%%%%%%% */
+p a .username{
+    margin-right: 1vw;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% comment on post css %%%%%%%%%%%%%% */
+.post-content p .comment{
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+
+/* %%%%%%%%%%%% comment like on post css %%%%%%%%%%%%%% */
+.post-content .comment-like{
+    font-size: 1.1vw;
+    display: inline;
+    position: relative;
+    left: 74vw;
+    bottom: 2vw;
+}
+
+/* %%%%%%%%%%%% comment input of post css %%%%%%%%%%%%%% */
+.post-content .post-comment-section input{
+    width: 70vw;
+    height: 5vh;
+    font-size: 1.2vw;
+    border: none;
+    outline: none;
+    background-color: transparent
+    ;
+}
+
+/* %%%%%%%%%%%% add emoji as comment on post css %%%%%%%%%%%%%% */
+.post-content .post-comment-section .add-emojies{
+    font-size: 1.1vw;
+    font-weight: 300;
+    margin-left: 3.8vw;
+
+}
+/* =============== main content end here  ============  */
+/* ################ css for big screen as pic end here ########### */
+
+
+/* ########## (screen-2) Media query for screens with a width between 768 to 992px   start here ############## */
+@media (min-width: 768px) and (max-width: 992px) {
+    /* ============= story-gallery css start here =========== */
+.story-gallery{
+    width: 85vw;
+    height: 26vh;
+    /* background-color: crimson; */
+    border: 1px solid #dadada;
+    border-radius: 1vw;
+    margin: 1vh 1vw;
+    margin-bottom: 2vw;
+    padding: 1.5vw 3vw;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+   
+    
+}
+
+/* %%%%%%%%%%%%%%%%%% remove scroll webkit css %%%%%%%%%%%%%%%%%% */
+.story-gallery::-webkit-scrollbar {
+    width: 0px;
+}
+body::-webkit-scrollbar {
+    height: 0px;
+}
+
+
+/* %%%%%%%%%%%%%%%%%% story div property css %%%%%%%%%%%%%%%%%% */
+.story{
+    width: 15vw;
+    height: 18vh;
+    /* background-color: royalblue; */
+    margin: 1vw 1vw;
+    padding: 1vw;
+}
+
+/* %%%%%%%%%%%%%%%%%% story-gallery <a> tag css %%%%%%%%%%%%%%%%%% */
+.story-gallery a{
+    text-decoration: none;
+    color: black;
+}
+
+/* %%%%%%%%%%%%%%%%%% story profile-pic css %%%%%%%%%%%%%%%%%% */
+.story-gallery a img{
+    width: 10vw;
+    height: 10vw;
+    margin-top: 1vw;
+    border: white;
+    box-shadow: 
+    0 0 0 0.3vw white,
+    0 0 0 0.6vw red;
+    border-radius: 50%;
+}
+
+/* %%%%%%%%%%%%%%%%%% story username css %%%%%%%%%%%%%%%%%% */
+.story-gallery a p{
+    font-size: 1.5vw;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+/* =============== post-content start here ============  */
+
+/* %%%%%%%%%%%%%%%%%% post-content css %%%%%%%%%%%%%%%%%% */
+.post-content{
+    width: 85vw;
+    margin: 5vw 1vw;
+    /* background-color: rosybrown; */
+    border-bottom: 0.1vw solid #9a9a9a;
+
+
+}
+
+/* %%%%%%%%%%%% upper part of the post content css  %%%%%%%%%%%%% */
+.header-post-content{
+    width: 85vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+}
+
+/* %%%%%%%%%%%% header-post-content css for <a> tag  %%%%%%%%%%%%% */
+.header-post-content a{
+    text-decoration: none;
+    color: black;
+    margin: 0.3vw;
+}
+
+/* %%%%%%%%%%%% user post profile pic css  %%%%%%%%%%%%% */
+.header-post-content img{
+    width: 8vw;
+    height: 8vw;
+    border: white;
+    box-shadow: 
+    0 0 0 0.25vw white,
+    0 0 0 0.5vw red;
+    border-radius: 50%;
+   
+
+}
+
+/* %%%%%%%%%%%% post usernams css  %%%%%%%%%%%%% */
+.header-post-content span{
+    font-size: 2vw;
+    font-weight: 500;
+    
+}
+
+/* %%%%%%%%%%%% 3 verticall dots on header-post-content css  %%%%%%%%%%%%% */
+.header-post-content .vertical-dots{
+    font-size: 2.5vw;
+    position: relative;
+    left: 45vw;
+}
+
+
+/* %%%%%%%%%%%% post image css  %%%%%%%%%%%%% */
+.post-content .post-img{
+    width: 85vw;
+    min-height: 40vh;
+    max-height: 60vh;
+    margin-top: 1vw;
+    border-radius: 0.4vw;
+    
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for ul tag */
+.post-content ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for <a> tag */
+.post-content li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for li tag  */
+.post-content li{
+    margin-right: 1.5vw;
+    font-size: 2.8vw;
+}
+
+/* %%%%%%%%%%%% post share and save css %%%%%%%%%%%%% */
+.post-content li .share-save{
+    position: relative;
+    left: 62vw;
+    padding: 0 1vw;
+}
+
+/* %%%%%%%%%%%% number of likes on post css %%%%%%%%%%%%%% */
+.post-content .likes{
+    display: inline;
+    margin-right: 0.5vw;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+/* %%%%%%%%%%%% number of superlikes on post css %%%%%%%%%%%%%% */
+.post-content .superlikes{
+    display: inline;
+    
+    margin-left: 0.5vw;
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+
+
+/* %%%%%%%%%%%% caption of post css %%%%%%%%%%%%%% */
+.post-content .caption{
+    display: flex;
+    align-items: center;
+}
+
+/* %%%%%%%%%%%% user-img of caption of post css %%%%%%%%%%%%%% */
+.post-content .caption img{
+    width: 5vw;
+    height: 5vw;
+    margin: 1vw 0;
+    border: white;
+    box-shadow: 
+    0 0 0 0.2vw white,
+    0 0 0 0.4vw red;
+    border-radius: 50%;
+
+}
+
+/* %%%%%%%%%%%% all post-content <a> tag css %%%%%%%%%%%%%% */
+.post-content a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* %%%%%%%%%%%% caption username of post css %%%%%%%%%%%%%% */
+.post-content .caption .username{
+    margin: 0 1vw;
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% actual caption paragraph of post css %%%%%%%%%%%%%% */
+.post-content .caption p{
+    margin-top: 0;
+    margin-left: 0.5vw;
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+
+/* %%%%%%%%%%%% red more  post css %%%%%%%%%%%%%% */
+.post-content .more{
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #9a9a9a;
+}
+
+/* %%%%%%%%%%%% view all comments of post css %%%%%%%%%%%%%% */
+.post-content  .view-all-comment{
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #9a9a9a;
+    margin-top: 2vw;
+    
+}
+
+/* %%%%%%%%%%%% username of comment on post css %%%%%%%%%%%%%% */
+p a .username{
+    margin-right: 1vw;
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% comment on post css %%%%%%%%%%%%%% */
+.post-content p .comment{
+    font-size: 1.8vw;
+    font-weight: 300;
+}
+
+/* %%%%%%%%%%%% comment like on post css %%%%%%%%%%%%%% */
+.post-content .comment-like{
+    font-size: 1.8vw;
+    display: inline;
+    position: relative;
+    left: 83vw;
+    bottom: 2vw;
+}
+
+/* %%%%%%%%%%%% comment input of post css %%%%%%%%%%%%%% */
+.post-content .post-comment-section input{
+    width: 78.6vw;
+    height: 4vh;
+    font-size: 2vw;
+    border: none;
+    outline: none;
+    background-color: transparent
+    ;
+}
+
+/* %%%%%%%%%%%% add emoji as comment on post css %%%%%%%%%%%%%% */
+.post-content .post-comment-section .add-emojies{
+    font-size: 1.8vw;
+    font-weight: 300;
+    margin-left: 3.8vw;
+
+}
+
+
+}
+
+
+/* ########## /* Media query for screens with a width between 769px to 992px ################ */
+
+
+
+
+/* ########## (screen-3) Media query for screens with a width between 577 to 768px   start here ############## */
+/* Small Devices (Tablets and Small Laptops) */
+@media (min-width: 577px) and (max-width: 768px)  {
+
+    .box{
+        width: 100vw;
+        height: 10vh;
+        background-color: crimson;
+    }
+
+
+    /* ============= story-gallery css start here =========== */
+.story-gallery{
+    width: 96vw;
+    height: 22vh;
+    /* background-color: crimson; */
+    border: 1px solid #dadada;
+    border-radius: 1vw;
+    margin: 1vh 1vw;
+    padding: 1.5vw 0;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+   
+    
+}
+
+/* %%%%%%%%%%%%%%%%%% remove scroll webkit css %%%%%%%%%%%%%%%%%% */
+.story-gallery::-webkit-scrollbar {
+    width: 0px;
+}
+
+body::-webkit-scrollbar {
+    height: 0px;
+}
+
+/* %%%%%%%%%%%%%%%%%% story div property css %%%%%%%%%%%%%%%%%% */
+.story{
+    width: 15vw;
+    height: 15vh;
+    /* background-color: royalblue; */
+    margin: 1vw 1vw;
+    padding: 1vw;
+}
+
+/* %%%%%%%%%%%%%%%%%% story-gallery <a> tag css %%%%%%%%%%%%%%%%%% */
+.story-gallery a{
+    text-decoration: none;
+    color: black;
+}
+
+/* %%%%%%%%%%%%%%%%%% story profile-pic css %%%%%%%%%%%%%%%%%% */
+.story-gallery a img{
+    width: 10vw;
+    height: 10vw;
+    margin-top: 1vw;
+    border: white;
+    box-shadow: 
+    0 0 0 0.3vw white,
+    0 0 0 0.6vw red;
+    border-radius: 50%;
+}
+
+/* %%%%%%%%%%%%%%%%%% story username css %%%%%%%%%%%%%%%%%% */
+.story-gallery a p{
+    font-size: 1.5vw;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+/* =============== post-content start here ============  */
+
+/* %%%%%%%%%%%%%%%%%% post-content css %%%%%%%%%%%%%%%%%% */
+.post-content{
+    width: 96vw;
+    margin: 5vw 1vw;
+    /* background-color: rosybrown; */
+    border-bottom: 0.1vw solid #9a9a9a;
+
+
+}
+
+/* %%%%%%%%%%%% upper part of the post content css  %%%%%%%%%%%%% */
+.header-post-content{
+    width: 96vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+}
+
+/* %%%%%%%%%%%% header-post-content css for <a> tag  %%%%%%%%%%%%% */
+.header-post-content a{
+    text-decoration: none;
+    color: black;
+    margin: 0.3vw;
+}
+
+/* %%%%%%%%%%%% user post profile pic css  %%%%%%%%%%%%% */
+.header-post-content img{
+    width: 8vw;
+    height: 8vw;
+    border: white;
+    box-shadow: 
+    0 0 0 0.25vw white,
+    0 0 0 0.5vw red;
+    border-radius: 50%;
+   
+
+}
+
+/* %%%%%%%%%%%% post usernams css  %%%%%%%%%%%%% */
+.header-post-content span{
+    font-size: 2vw;
+    font-weight: 500;
+    
+}
+
+/* %%%%%%%%%%%% 3 verticall dots on header-post-content css  %%%%%%%%%%%%% */
+.header-post-content .vertical-dots{
+    font-size: 2.5vw;
+    position: relative;
+    left: 55vw;
+}
+
+
+/* %%%%%%%%%%%% post image css  %%%%%%%%%%%%% */
+.post-content .post-img{
+    width: 96vw;
+    min-height: 40vh;
+    max-height: 60vh;
+    border-radius: 0.4vw;
+    
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for ul tag */
+.post-content ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for <a> tag */
+.post-content li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for li tag  */
+.post-content li{
+    margin-right: 1.5vw;
+    font-size: 3.2vw;
+}
+
+/* %%%%%%%%%%%% post share and save css %%%%%%%%%%%%% */
+.post-content li .share-save{
+    position: relative;
+    left: 71vw;
+    padding: 0 1vw;
+}
+
+/* %%%%%%%%%%%% number of likes on post css %%%%%%%%%%%%%% */
+.post-content .likes{
+    display: inline;
+    margin-right: 0.5vw;
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+
+/* %%%%%%%%%%%% number of superlikes on post css %%%%%%%%%%%%%% */
+.post-content .superlikes{
+    display: inline;
+    
+    margin-left: 0.5vw;
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+
+
+/* %%%%%%%%%%%% caption of post css %%%%%%%%%%%%%% */
+.post-content .caption{
+    display: flex;
+    align-items: center;
+}
+
+/* %%%%%%%%%%%% user-img of caption of post css %%%%%%%%%%%%%% */
+.post-content .caption img{
+    width: 5vw;
+    height: 5vw;
+    margin: 1vw 0;
+    border: white;
+    box-shadow: 
+    0 0 0 0.2vw white,
+    0 0 0 0.4vw red;
+    border-radius: 50%;
+
+}
+
+/* %%%%%%%%%%%% all post-content <a> tag css %%%%%%%%%%%%%% */
+.post-content a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* %%%%%%%%%%%% caption username of post css %%%%%%%%%%%%%% */
+.post-content .caption .username{
+    margin: 0 1vw;
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% actual caption paragraph of post css %%%%%%%%%%%%%% */
+.post-content .caption p{
+    margin-top: 0;
+    margin-left: 0.5vw;
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+
+/* %%%%%%%%%%%% red more  post css %%%%%%%%%%%%%% */
+.post-content .more{
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #9a9a9a;
+}
+
+/* %%%%%%%%%%%% view all comments of post css %%%%%%%%%%%%%% */
+.post-content  .view-all-comment{
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #9a9a9a;
+    margin-top: 2vw;
+    
+}
+
+/* %%%%%%%%%%%% username of comment on post css %%%%%%%%%%%%%% */
+p a .username{
+    margin-right: 1vw;
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% comment on post css %%%%%%%%%%%%%% */
+.post-content p .comment{
+    font-size: 1.8vw;
+    font-weight: 300;
+}
+
+/* %%%%%%%%%%%% comment like on post css %%%%%%%%%%%%%% */
+.post-content .comment-like{
+    font-size: 1.8vw;
+    display: inline;
+    position: relative;
+    left: 94vw;
+    bottom: 2vw;
+}
+
+/* %%%%%%%%%%%% comment input of post css %%%%%%%%%%%%%% */
+.post-content .post-comment-section input{
+    width: 88.7vw;
+    height: 4vh;
+    font-size: 2vw;
+    border: none;
+    outline: none;
+    background-color: transparent
+    ;
+}
+
+/* %%%%%%%%%%%% add emoji as comment on post css %%%%%%%%%%%%%% */
+.post-content .post-comment-section .add-emojies{
+    font-size: 1.8vw;
+    font-weight: 300;
+    margin-left: 3.8vw;
+    position: relative;
+    left: 0.8vw;
+
+}
+
+
+}
+/* ########## Media query for screens with a width between 577 to 768px   end here ############## */
+
+/* Extra Small Devices ( (screen-4) Mobile Phones screen size between 321px and 576px) */
+@media (min-width: 321px) and (max-width: 576px) {
+/* ============= story-gallery css start here =========== */
+.story-gallery{
+    width: 98vw;
+    height: 18vh;
+    /* background-color: crimson; */
+    border: 1px solid #dadada;
+    border-radius: 1vw;
+    margin: 1vh 1vw;
+    padding: 1.5vw 0;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+   
+}
+
+/* %%%%%%%%%%%%%%%%%% remove scroll webkit css %%%%%%%%%%%%%%%%%% */
+.story-gallery::-webkit-scrollbar {
+    width: 0px;
+}
+/* %%%%%%%%%%%%%%%%%% remove scroll webkit css %%%%%%%%%%%%%%%%%% */
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* %%%%%%%%%%%%%%%%%% story div property css %%%%%%%%%%%%%%%%%% */
+.story{
+    width: 15vw;
+    height: 12vh;
+    /* background-color: royalblue; */
+    margin: 1vw 1vw;
+    padding: 1vw;
+}
+
+/* %%%%%%%%%%%%%%%%%% story-gallery <a> tag css %%%%%%%%%%%%%%%%%% */
+.story-gallery a{
+    text-decoration: none;
+    color: black;
+}
+
+.story-gallery a img{
+    width: 12vw;
+    height: 12vw;
+    margin-top: 1vw;
+    border: white;
+    box-shadow: 
+    0 0 0 0.4vw white,
+    0 0 0 0.8vw red;
+    border-radius: 50%;
+}
+
+/* %%%%%%%%%%%%%%%%%% story username css %%%%%%%%%%%%%%%%%% */
+.story-gallery a p{
+    font-size: 1.8vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* =============== post-content start here ============  */
+
+/* %%%%%%%%%%%%%%%%%% post-content css %%%%%%%%%%%%%%%%%% */
+.post-content{
+    width: 98vw;
+    margin: 5vw 1vw;
+    /* background-color: rosybrown; */
+    border-bottom: 0.1vw solid #9a9a9a;
+
+
+}
+
+/* %%%%%%%%%%%% upper part of the post content css  %%%%%%%%%%%%% */
+.header-post-content{
+    width: 98vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+}
+
+/* %%%%%%%%%%%% header-post-content css for <a> tag  %%%%%%%%%%%%% */
+.header-post-content a{
+    text-decoration: none;
+    color: black;
+    margin: 0.3vw;
+}
+
+/* %%%%%%%%%%%% user post profile pic css  %%%%%%%%%%%%% */
+.header-post-content img{
+    width: 8vw;
+    height: 8vw;
+    border: white;
+    box-shadow: 
+    0 0 0 0.3vw white,
+    0 0 0 0.6vw red;
+    border-radius: 50%;
+   
+
+}
+
+/* %%%%%%%%%%%% post usernams css  %%%%%%%%%%%%% */
+.header-post-content span{
+    font-size: 2vw;
+    font-weight: 500;
+    
+}
+
+/* %%%%%%%%%%%% 3 verticall dots on header-post-content css  %%%%%%%%%%%%% */
+.header-post-content .vertical-dots{
+    font-size: 2.5vw;
+    position: relative;
+    left: 55vw;
+}
+
+/* %%%%%%%%%%%% post image css  %%%%%%%%%%%%% */
+.post-content .post-img{
+    width: 98vw;
+    min-height: 50vh;
+    max-height: 100vh;
+    border-radius: 0.4vw;
+    
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for ul tag */
+.post-content ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for <a> tag */
+.post-content li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for li tag  */
+.post-content li{
+    margin-right: 2vw;
+    font-size: 5vw;
+}
+
+/* %%%%%%%%%%%% post share and save css %%%%%%%%%%%%% */
+.post-content li .share-save{
+    position: relative;
+    left: 62.2vw;
+    padding: 0 1vw;
+}
+
+/* %%%%%%%%%%%% number of likes on post css %%%%%%%%%%%%%% */
+.post-content .likes{
+    display: inline;
+    margin-right: 0.5vw;
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% number of superlikes on post css %%%%%%%%%%%%%% */
+.post-content .superlikes{
+    display: inline;
+    
+    margin-left: 0.5vw;
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% caption of post css %%%%%%%%%%%%%% */
+.post-content .caption{
+    display: flex;
+    align-items: center;
+}
+
+/* %%%%%%%%%%%%  img caption of post css %%%%%%%%%%%%%% */
+.post-content .caption img{
+    width: 6vw;
+    height: 6vw;
+    margin: 1vw 0;
+    border: white;
+    box-shadow: 
+    0 0 0 0.25vw white,
+    0 0 0 0.5vw red;
+    border-radius: 50%;
+
+}
+
+/* %%%%%%%%%%%% all post-content <a> tag css %%%%%%%%%%%%%% */
+.post-content a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* %%%%%%%%%%%% caption username of post css %%%%%%%%%%%%%% */
+.post-content .caption .username{
+    margin: 0 1vw;
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% actual caption paragraph of post css %%%%%%%%%%%%%% */
+.post-content .caption p{
+    margin-top: 0;
+    margin-left: 0.5vw;
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+
+/* %%%%%%%%%%%% red more  post css %%%%%%%%%%%%%% */
+.post-content .more{
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #9a9a9a;
+}
+
+/* %%%%%%%%%%%% view all comments of post css %%%%%%%%%%%%%% */
+.post-content  .view-all-comment{
+    font-size: 2.2vw;
+    font-weight: 600;
+    color: #9a9a9a;
+    margin-top: 2vw;
+    
+}
+
+/* %%%%%%%%%%%% username of comment on post css %%%%%%%%%%%%%% */
+p a .username{
+    margin-right: 1vw;
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% comment on post css %%%%%%%%%%%%%% */
+.post-content p .comment{
+    font-size: 2.5vw;
+    font-weight: 300;
+}
+
+/* %%%%%%%%%%%% comment like on post css %%%%%%%%%%%%%% */
+.post-content .comment-like{
+    font-size: 2.5vw;
+    display: inline;
+    position: relative;
+    left: 94.3vw;
+    bottom: 3vh;
+}
+
+/* %%%%%%%%%%%% comment input of post css %%%%%%%%%%%%%% */
+.post-content .post-comment-section input{
+    width: 89.7vw;
+    height: 4vh;
+    font-size: 2.5vw;
+    border: none;
+    outline: none;
+    background-color: transparent
+    ;
+}
+
+
+/* %%%%%%%%%%%% add emoji as comment on post css %%%%%%%%%%%%%% */
+.post-content .post-comment-section .add-emojies{
+    font-size: 2.5vw;
+    font-weight: 300;
+    margin-left: 3.8vw;
+
+}
+
+}
+
+/* Extra Small Devices (Mobile Phones screen between and  576px end here) */
+
+
+
+/* (screen-5) Extra Small Devices (Mobile Phones less than 320px start here) */
+@media (max-width: 320px) {
+
+/* ============= story-gallery css start here =========== */
+.story-gallery{
+    width: 98vw;
+    height: 15vh;
+    /* background-color: crimson; */
+    border: 1px solid #dadada;
+    border-radius: 1vw;
+    margin: 1vh 1vw;
+    padding: 1.5vw 0;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+   
+}
+
+/* %%%%%%%%%%%%%%%%%% remove scroll webkit css %%%%%%%%%%%%%%%%%% */
+.story-gallery::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* %%%%%%%%%%%%%%%%%% remove scroll webkit css %%%%%%%%%%%%%%%%%% */
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* %%%%%%%%%%%%%%%%%% story div property css %%%%%%%%%%%%%%%%%% */
+.story{
+    width: 20vw;
+    height: 10vh;
+    /* background-color: royalblue; */
+    margin: 1vw 1vw;
+    padding: 1vw;
+}
+
+/* %%%%%%%%%%%%%%%%%% story-gallery <a> tag css %%%%%%%%%%%%%%%%%% */
+.story-gallery a{
+    text-decoration: none;
+    color: black;
+}
+
+/* %%%%%%%%%%%%%%%%%% story img css %%%%%%%%%%%%%%%%%% */
+.story-gallery a img{
+    width: 16vw;
+    height: 16vw;
+    margin-top: 1vw;
+    border: white;
+    box-shadow: 
+    0 0 0 0.6vw white,
+    0 0 0 1.2vw red;
+    border-radius: 50%;
+}
+
+/* %%%%%%%%%%%%%%%%%% story username css %%%%%%%%%%%%%%%%%% */
+.story-gallery a p{
+    font-size: 2.5vw;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+
+/* %%%%%%%%%%%%%%%%%% post-content css %%%%%%%%%%%%%%%%%% */
+.post-content{
+    width: 98vw;
+    margin: 5vw 1vw;
+    /* background-color: rosybrown; */
+    border-bottom: 0.1vw solid #9a9a9a;
+
+
+}
+
+/* %%%%%%%%%%%% upper part of the post content css  %%%%%%%%%%%%% */
+.header-post-content{
+    width: 98vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+/* %%%%%%%%%%%% header-post-content css for <a> tag  %%%%%%%%%%%%% */
+.header-post-content a{
+    text-decoration: none;
+    color: black;
+    margin: 0.3vw;
+}
+
+/* %%%%%%%%%%%% user post profile pic css  %%%%%%%%%%%%% */
+.header-post-content img{
+    width: 12vw;
+    height: 12vw;
+    border: white;
+    box-shadow: 
+    0 0 0 0.5vw white,
+    0 0 0 1.0vw red;
+    border-radius: 50%;
+   
+
+}
+
+/* %%%%%%%%%%%% post usernams css  %%%%%%%%%%%%% */
+.header-post-content span{
+    font-size: 4vw;
+    font-weight: 500;
+    margin: 0 1vw;
+    
+}
+
+/* %%%%%%%%%%%% 3 verticall dots on header-post-content css  %%%%%%%%%%%%% */
+.header-post-content .vertical-dots{
+    font-size: 5vw;
+    position: relative;
+    left: 19vw;
+}
+
+/* %%%%%%%%%%%% post image css  %%%%%%%%%%%%% */
+.post-content .post-img{
+    width: 98vw;
+    min-height: 50vh;
+    max-height: 100vh;
+    border-radius: 0.4vw;
+    
+}
+
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for ul tag */
+.post-content ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for <a> tag */
+.post-content li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for li tag  */
+.post-content li{
+    margin-right: 3vw;
+    font-size: 6vw;
+}
+
+/* %%%%%%%%%%%% post share and save css %%%%%%%%%%%%% */
+.post-content li .share-save{
+    position: relative;
+    left: 53vw;
+    padding: 0 1vw;
+}
+
+/* %%%%%%%%%%%% number of likes on post css %%%%%%%%%%%%%% */
+.post-content .likes{
+    display: inline;
+    margin-right: 0.5vw;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+
+/* %%%%%%%%%%%% number of superlikes on post css %%%%%%%%%%%%%% */
+.post-content .superlikes{
+    display: inline;
+    margin-left: 0.5vw;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% caption of post css %%%%%%%%%%%%%% */
+.post-content .caption{
+    display: flex;
+    align-items: center;
+}
+
+/* %%%%%%%%%%%%  img caption of post css %%%%%%%%%%%%%% */
+.post-content .caption img{
+    width: 8vw;
+    height: 8vw;
+    margin: 1vw 0;
+    border: white;
+    box-shadow: 
+    0 0 0 0.4vw white,
+    0 0 0 0.8vw red;
+    border-radius: 50%;
+
+}
+
+/* %%%%%%%%%%%% all post-content <a> tag css %%%%%%%%%%%%%% */
+.post-content a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+/* %%%%%%%%%%%% caption username of post css %%%%%%%%%%%%%% */
+.post-content .caption .username{
+    margin: 0 1vw;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% actual caption paragraph of post css %%%%%%%%%%%%%% */
+.post-content .caption p{
+    margin-top: 0;
+    margin-left: 0.5vw;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+/* %%%%%%%%%%%% red more  post css %%%%%%%%%%%%%% */
+.post-content .more{
+    font-size: 4vw;
+    font-weight: 600;
+    color: #9a9a9a;
+}
+
+/* %%%%%%%%%%%% view all comments of post css %%%%%%%%%%%%%% */
+.post-content  .view-all-comment{
+    font-size: 4vw;
+    font-weight: 600;
+    color: #9a9a9a;
+    margin-top: 2vw;
+    
+}
+
+
+/* %%%%%%%%%%%% username of comment on post css %%%%%%%%%%%%%% */
+p a .username{
+    margin-right: 1vw;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+/* %%%%%%%%%%%% comment on post css %%%%%%%%%%%%%% */
+.post-content p .comment{
+    font-size: 4vw;
+    font-weight: 300;
+}
+
+
+/* %%%%%%%%%%%% comment like on post css %%%%%%%%%%%%%% */
+.post-content .comment-like{
+    font-size: 4vw;
+    display: inline;
+    position: relative;
+    left: 94vw;
+    bottom: 2.8vh;
+}
+
+
+/* %%%%%%%%%%%% comment input of post css %%%%%%%%%%%%%% */
+.post-content .post-comment-section input{
+    width: 88.7vw;
+    height: 4vh;
+    font-size: 5vw;
+    border: none;
+    outline: none;
+    background-color: transparent
+    ;
+}
+
+
+/* %%%%%%%%%%%% add emoji as comment on post css %%%%%%%%%%%%%% */
+.post-content .post-comment-section .add-emojies{
+    font-size: 3.5vw;
+    font-weight: 300;
+    margin-left: 3.8vw;
+
+}
+
+}
+/* Extra Small Devices (Mobile Phones less than 320px end here) */
+
+
+/* ============== right side-navbar start here ============= */
+
+/* ============== right side-navbar end here ============= */

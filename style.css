@@ -1,0 +1,881 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Reset margins and paddings for specific elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: red;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #00002f;
+    /* --text-color: black; */
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+
+/* =========== css on body ========= */
+body {
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+    /* display: grid; */
+    display: flex;
+    justify-content: space-between;
+
+
+
+
+
+}
+
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+body.dark {
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+}
+
+/* ################ (screen-1) navbar css for big screen as pc or laptop start here ########### */
+/* ===== Sidebar ===== */
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    box-shadow: #1f2021;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
+}
+
+.sidebar.close {
+    width: 88px;
+}
+
+/* ===== Reusable code - Here ===== */
+.sidebar li {
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebar header .image,
+.sidebar .fa-solid {
+    min-width: 60px;
+    border-radius: 6px;
+}
+
+.sidebar .fa-solid {
+    min-width: 60px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.sidebar .text,
+.sidebar .fa-solid {
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+li a .profile-img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.sidebar .text {
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.sidebar.close .text {
+    opacity: 0;
+}
+
+/* =========================== */
+
+.sidebar header {
+    position: relative;
+}
+
+.sidebar header .image-text {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar header .logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar header img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    border-radius: 0.2rem;
+}
+
+
+
+header .image-text .profession {
+    font-size: 16px;
+    margin-top: -2px;
+    display: block;
+}
+
+.sidebar header .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar header .image img {
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sidebar header .toggle {
+    position: absolute;
+    top: 30%;
+    right: -2.8rem;
+    font-size: xx-large;
+    transform: translateY(-50%) rotate(180deg);
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+body.dark .sidebar header .toggle {
+    color: var(--text-color);
+}
+
+.sidebar.close .toggle {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.sidebar .menu {
+    margin-top: 40px;
+}
+
+.sidebar li.search-box {
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.sidebar li.search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: var(--tran-05);
+}
+
+.sidebar li a {
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+}
+
+.sidebar li a:hover {
+    background-color: var(--primary-color);
+}
+
+.sidebar li a:hover .fa-solid,
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
+}
+
+body.dark .sidebar li a:hover .fa-solid,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
+
+.sidebar .menu-bar {
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.menu-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar .menu-bar .mode {
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    position: relative;
+    transition: var(--tran-05);
+}
+
+.menu-bar .mode .sun-moon {
+    height: 50px;
+    width: 60px;
+
+}
+
+.mode .sun-moon i {
+    position: absolute;
+}
+
+.mode .sun-moon i.sun {
+    opacity: 0;
+}
+
+body.dark .mode .sun-moon i.sun {
+    opacity: 1;
+}
+
+body.dark .mode .sun-moon i.moon {
+    opacity: 1;
+}
+
+.menu-bar .bottom-content .toggle-switch {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: var(--toggle-color);
+    background-color: rgb(9, 58, 232);
+    transition: var(--tran-05);
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: var(--sidebar-color);
+    background-color: red;
+    transition: var(--tran-04);
+}
+
+body.dark .switch::before {
+    left: 20px;
+}
+
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    /* height: auto; */
+    height: auto;
+    width: calc(100% - 250px);
+    /* background: yellow; */
+    /* border: 5px solid red; */
+    transition: var(--tran-05);
+
+}
+
+
+
+
+.sidebar.close~.container {
+    left: 88px;
+    width: calc(100% - 88px);
+}
+
+
+
+/* ################  navbar css for big screen as pc or laptop end here ########### */
+
+/* %%%%%%%% upper-navbar and lower-navbar display none start here %%%%%%%%% */
+
+
+
+.upper-navbar header {
+    display: none;
+}
+
+.lower-navbar {
+    display: none;
+}
+
+/* %%%%%%%% upper-navbar and lower-navbar display none end here %%%%%%%%% */
+
+
+
+/* ========== right-sidenvbar ============ */
+
+
+.right-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 15vw;
+    padding: 1vw 1vw;
+    box-shadow: #1f2021;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
+}
+
+.right-sidebar{
+    display: none;
+}
+
+
+
+
+/* Existing styles ... */ 
+/*  (screen-2) Media query for screens with a width 769px to 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .upper-navbar header {
+        display: none;
+    }
+
+    .lower-navbar {
+        display: none;
+    }
+
+
+    .container {
+        position: absolute;
+        left: 250px;
+        height: auto;
+        width: calc(100% - 250px);
+        /* background: yellow; */
+        /* border: 1px solid red; */
+        transition: var(--tran-05);
+
+    }
+
+
+
+    .sidebar.close~.container {
+        left: 88px;
+        width: calc(100% - 88px);
+    }
+
+
+    .right-sidebar {
+        display: none;
+    }
+}
+
+
+
+/* Existing styles ... */
+/*    (screen-3)Media query for screens with a width between 577 and 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Styles for small devices */
+    .sidebar {
+        display: none;
+        /* Hide the sidebar */
+    }
+
+    .upper-navbar{
+        /* display: none; */
+    }
+
+    /* ##### Upper navbar css  start here ######## */
+    .upper-navbar header {
+        width: 100vw;
+        height: 10vh;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        /* background-color: crimson; */
+        background-color: transparent;
+
+
+    }
+
+    .face-logo-upper img {
+        width: 7vw;
+        height: 7vw;
+        margin-left: 1vw;
+        border-radius: 10px;
+    }
+
+    .text-logo .logo-img-upper {
+        width: 24vw;
+        height: 7vh;
+        margin-left: 1vw;
+        border-radius: 5px;
+
+    }
+
+
+    .ul-upper-nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 47.5vw;
+    }
+
+    .nav-link-upper a {
+        text-decoration: none;
+        color: black;
+
+
+    }
+
+    .nav-link-upper a i {
+        font-size: 3.5vw;
+        margin-right: 3vw;
+    }
+
+    .nav-link-upper a i:hover {
+        color: red;
+    }
+
+    .nav-link-upper a .fa-microblog:hover {
+        color: black;
+    }
+
+
+    .fa-microblog {
+        color: red;
+    }
+
+    /* ########### Upper navbar css end here ########### */
+
+
+    /* ================ lower navbar is start here ============== */
+
+    .lower-navbar {
+        width: 100vw;
+        height: 6vh;
+        background-color: crimson;
+        /* background-color: white; */
+        border-top: 0.02rem solid #3a3b3c;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+
+
+    }
+
+    .ul-lower-nav {
+        list-style: none;
+        margin: 0;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+
+    }
+
+    .ul-lower-nav a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .lower-nav-link {
+        font-size: 4vw;
+        margin: 0 1vw;
+    }
+
+
+    /* ================ lower navbar is end here ============== */
+
+
+    .container {
+        width: 100%;
+        /* border: 2px solid red; */
+        margin-top: 10vh;
+        /* background-color: yellow; */
+        left: 0;
+        /* border: none; */
+        
+    }
+
+
+
+    .sidebar.close~.container {
+        left: 0;
+        /* Reset the left position for the container */
+        width: 100%;
+        /* Adjust the container to take 100% width */
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+}
+
+
+/* (screen-4) Extra Small Devices (Mobile Phones screen between 321 and 576px) */
+@media (min-width: 321px) and (max-width: 576px) {
+
+    /* Styles for extra small devices */
+    .sidebar {
+        display: none;
+        /* Hide the sidebar */
+    }
+
+    /* ##### Upper navbar css  start here ######## */
+
+
+    .upper-navbar header {
+        width: 99vw;
+        height: 10vh;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        /* background-color: crimson; */
+
+    }
+
+    .face-logo-upper img {
+        width: 10vw;
+        height: 10vw;
+        margin-left: 1vw;
+        border-radius: 10px;
+    }
+
+    .text-logo .logo-img-upper {
+        width: 30vw;
+        height: 10vw;
+        margin-left: 1vw;
+        border-radius: 5px;
+
+    }
+
+
+
+    .ul-upper-nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 34.5vw;
+    }
+
+    .nav-link-upper a {
+        text-decoration: none;
+        color: black;
+
+
+    }
+
+    .nav-link-upper a i {
+        font-size: 5vw;
+        margin-right: 4vw;
+    }
+
+    .nav-link-upper a i:hover {
+        color: red;
+    }
+
+    .nav-link-upper a .fa-microblog:hover {
+        color: black;
+    }
+
+
+    .fa-microblog {
+        color: red;
+    }
+
+
+    .fa-microblog {
+        color: red;
+    }
+
+    /* ########### Upper navbar css end here ########### */
+
+    
+    /* ================ lower navbar is start here ============== */
+
+    .lower-navbar {
+        width: 100vw;
+        height: 6vh;
+        background-color: crimson;
+        /* background-color: white; */
+        /* border-top: 0.02rem solid #3a3b3c; */
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+
+
+    }
+
+    .ul-lower-nav {
+        list-style: none;
+        margin: 0;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      
+        
+
+    }
+
+    .ul-lower-nav a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .lower-nav-link {
+        font-size: 5vw;
+        margin: 0 1vw;
+    }
+
+    /* .lower-nav-link .profile-img{
+        margin-top: 4px;
+    } */
+
+    /* ================ lower navbar is end here ============== */
+
+
+
+    .container {
+        width: 100%;
+        /* Adjust the container to take 100% width */
+        border: 2px solid red;
+        margin-top: 10vh;
+        /* background-color: yellow; */
+        left: 0;
+        /* Reset the left position */
+        border: none;
+        /* Remove the border */
+    }
+
+
+
+    .sidebar.close~.container {
+        left: 0;
+        /* Reset the left position for the container */
+        width: 100%;
+        /* Adjust the container to take 100% width */
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+}
+
+/* (screen-5) Extra Small Devices (Mobile Phones max-width 320) */
+@media (max-width: 320px) {
+
+    /* Styles for extra smallest  devices */
+    .sidebar {
+        display: none;
+        /* Hide the sidebar */
+    }
+
+
+
+    /* ##### Upper navbar css  start here ######## */
+    .upper-navbar header {
+        width: 99vw;
+        height: 10vh;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        /* background-color: crimson; */
+
+    }
+
+    .face-logo-upper img {
+        width: 10vw;
+        height: 10vw;
+        margin-left: 1vw;
+        border-radius: 10px;
+    }
+
+    .text-logo .logo-img-upper {
+        width: 30vw;
+        height: 10vw;
+        margin-left: 1vw;
+        border-radius: 5px;
+
+    }
+
+    .ul-upper-nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 34.5vw;
+    }
+
+    .nav-link-upper a {
+        text-decoration: none;
+        color: black;
+
+
+    }
+
+    .nav-link-upper a i {
+        font-size: 5vw;
+        margin-right: 4vw;
+    }
+
+    .nav-link-upper a i:hover {
+        color: red;
+    }
+
+    .nav-link-upper a .fa-microblog:hover {
+        color: black;
+    }
+
+    .fa-microblog {
+        color: red;
+    }
+
+    /* ########### Upper navbar css end here ########### */
+
+
+     /* ================ lower navbar is start here ============== */
+
+     .lower-navbar {
+        width: 100vw;
+        height: 6vh;
+        background-color: crimson;
+        /* background-color: white; */
+        border-top: 0.02rem solid #3a3b3c;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+
+
+    }
+
+    .ul-lower-nav {
+        list-style: none;
+        margin: 0;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+
+    } 
+
+    .ul-lower-nav a{
+        text-decoration: none;
+        color: #000;
+    } 
+
+    .lower-nav-link {
+        font-size: 7vw;
+        margin: 0 1vw;
+    }
+
+
+    /* ================ lower navbar is end here ============== */
+
+
+
+    .container {
+        width: 100%;
+        /* Adjust the container to take 100% width */
+        border: 2px solid red;
+        margin-top: 10vh;
+        /* background-color: yellow; */
+        left: 0;
+        /* Reset the left position */
+        border: none;
+        /* Remove the border */
+    }
+
+
+
+    .sidebar.close~.container {
+        left: 0;
+        /* Reset the left position for the container */
+        width: 100%;
+        /* Adjust the container to take 100% width */
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+}
+
+
