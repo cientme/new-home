@@ -12,7 +12,7 @@
 
 .story-gallery{
     width: 76vw;
-    height: 28vh;
+    height: 36vh;
     /* background-color: crimson; */
     border: 1px solid #dadada;
     border-radius: 1vw;
@@ -34,8 +34,8 @@
 /* %%%%%%%%%%%%%%%%%% story div property css %%%%%%%%%%%%%%%%%% */
 .story{
     width: 10vw;
-    height: 18vh;
-    /* background-color: royalblue */
+    height: 24vh;
+    /* background-color: royalblue; */
     margin: 1vw 0.1vw;
     padding: 1vw;
 }
@@ -257,7 +257,7 @@ p a .username{
     display: inline;
     position: relative;
     left: 74vw;
-    bottom: 2vw;
+    bottom: 20px;
 }
 
 /* %%%%%%%%%%%% comment input of post css %%%%%%%%%%%%%% */
@@ -568,22 +568,22 @@ p a .username{
 /* Small Devices (Tablets and Small Laptops) */
 @media (min-width: 577px) and (max-width: 768px)  {
 
-    .box{
+    /* .box{
         width: 100vw;
         height: 10vh;
         background-color: crimson;
-    }
+    } */
 
 
     /* ============= story-gallery css start here =========== */
 .story-gallery{
     width: 96vw;
-    height: 22vh;
+    height: 26vh;
     /* background-color: crimson; */
     border: 1px solid #dadada;
-    border-radius: 1vw;
-    margin: 1vh 1vw;
-    padding: 1.5vw 0;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 12px 0;
     display: flex;
     align-items: center;
     overflow-x: auto;
@@ -602,8 +602,8 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%%%%%%%% story div property css %%%%%%%%%%%%%%%%%% */
 .story{
-    width: 15vw;
-    height: 15vh;
+    width: 135px;
+    height: 135px;
     /* background-color: royalblue; */
     margin: 1vw 1vw;
     padding: 1vw;
@@ -617,9 +617,9 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%%%%%%%% story profile-pic css %%%%%%%%%%%%%%%%%% */
 .story-gallery a img{
-    width: 10vw;
-    height: 10vw;
-    margin-top: 1vw;
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
     border: white;
     box-shadow: 
     0 0 0 0.3vw white,
@@ -629,8 +629,8 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%%%%%%%% story username css %%%%%%%%%%%%%%%%%% */
 .story-gallery a p{
-    font-size: 1.5vw;
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -640,7 +640,7 @@ body::-webkit-scrollbar {
 /* %%%%%%%%%%%%%%%%%% post-content css %%%%%%%%%%%%%%%%%% */
 .post-content{
     width: 96vw;
-    margin: 5vw 1vw;
+    margin: 50px 10px;
     /* background-color: rosybrown; */
     border-bottom: 0.1vw solid #9a9a9a;
 
@@ -650,10 +650,11 @@ body::-webkit-scrollbar {
 /* %%%%%%%%%%%% upper part of the post content css  %%%%%%%%%%%%% */
 .header-post-content{
     width: 96vw;
-    height: 10vh;
+    height: 15vh;
+    margin: 5px 0;
+    /* background-color: aqua; */
     display: flex;
     align-items: center;
-    margin: 0;
 
 }
 
@@ -666,8 +667,9 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%% user post profile pic css  %%%%%%%%%%%%% */
 .header-post-content img{
-    width: 8vw;
-    height: 8vw;
+    width: 70px;
+    height: 70px;
+    margin: 5px 2px;
     border: white;
     box-shadow: 
     0 0 0 0.25vw white,
@@ -679,16 +681,16 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%% post usernams css  %%%%%%%%%%%%% */
 .header-post-content span{
-    font-size: 2vw;
+    font-size: 20px;
     font-weight: 500;
     
 }
 
 /* %%%%%%%%%%%% 3 verticall dots on header-post-content css  %%%%%%%%%%%%% */
 .header-post-content .vertical-dots{
-    font-size: 2.5vw;
+    font-size: 25px;
     position: relative;
-    left: 55vw;
+    left: 40vw;
 }
 
 
@@ -697,7 +699,7 @@ body::-webkit-scrollbar {
     width: 96vw;
     min-height: 40vh;
     max-height: 60vh;
-    border-radius: 0.4vw;
+    border-radius: 5px;
     
 }
 
@@ -713,36 +715,36 @@ body::-webkit-scrollbar {
 .post-content li a{
     text-decoration: none;
     color: black;
+    
 }
 
 /* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for li tag  */
 .post-content li{
-    margin-right: 1.5vw;
-    font-size: 3.2vw;
+    margin: 0 18px;
+    font-size: 28px;
 }
 
 /* %%%%%%%%%%%% post share and save css %%%%%%%%%%%%% */
 .post-content li .share-save{
     position: relative;
-    left: 71vw;
-    padding: 0 1vw;
+    left: 48vw;
+    
 }
 
 /* %%%%%%%%%%%% number of likes on post css %%%%%%%%%%%%%% */
 .post-content .likes{
     display: inline;
-    margin-right: 0.5vw;
-    font-size: 1.8vw;
-    font-weight: 400;
+    margin: 18px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 /* %%%%%%%%%%%% number of superlikes on post css %%%%%%%%%%%%%% */
 .post-content .superlikes{
     display: inline;
-    
-    margin-left: 0.5vw;
-    font-size: 1.8vw;
-    font-weight: 400;
+    margin: 18px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 
@@ -754,9 +756,9 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%% user-img of caption of post css %%%%%%%%%%%%%% */
 .post-content .caption img{
-    width: 5vw;
-    height: 5vw;
-    margin: 1vw 0;
+    width: 45px;
+    height: 45px;
+    margin: 10px 5px;
     border: white;
     box-shadow: 
     0 0 0 0.2vw white,
@@ -774,73 +776,77 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%% caption username of post css %%%%%%%%%%%%%% */
 .post-content .caption .username{
-    margin: 0 1vw;
-    font-size: 1.8vw;
+    margin: 0 5px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 /* %%%%%%%%%%%% actual caption paragraph of post css %%%%%%%%%%%%%% */
 .post-content .caption p{
-    margin-top: 0;
-    margin-left: 0.5vw;
-    font-size: 1.8vw;
+    margin: 5px;
+    font-size: 18px;
     font-weight: 400;
 }
 
 /* %%%%%%%%%%%% red more  post css %%%%%%%%%%%%%% */
 .post-content .more{
-    font-size: 1.8vw;
+    font-size: 18px;
     font-weight: 600;
+    margin: 0 18px;
     color: #9a9a9a;
+    /* color: black; */
 }
 
 /* %%%%%%%%%%%% view all comments of post css %%%%%%%%%%%%%% */
 .post-content  .view-all-comment{
-    font-size: 1.8vw;
+    font-size: 18px;
     font-weight: 600;
+    margin: 0 18px;
     color: #9a9a9a;
-    margin-top: 2vw;
+    /* color: black; */
+    margin-top: 20px;
     
 }
 
 /* %%%%%%%%%%%% username of comment on post css %%%%%%%%%%%%%% */
 p a .username{
-    margin-right: 1vw;
-    font-size: 1.8vw;
+    margin: 0 18px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 /* %%%%%%%%%%%% comment on post css %%%%%%%%%%%%%% */
 .post-content p .comment{
-    font-size: 1.8vw;
+    font-size: 18px;
     font-weight: 300;
 }
 
 /* %%%%%%%%%%%% comment like on post css %%%%%%%%%%%%%% */
 .post-content .comment-like{
-    font-size: 1.8vw;
+    font-size: 18px;
     display: inline;
     position: relative;
-    left: 94vw;
-    bottom: 2vw;
+    left: 92vw;
+    bottom: 20px;
 }
 
 /* %%%%%%%%%%%% comment input of post css %%%%%%%%%%%%%% */
 .post-content .post-comment-section input{
-    width: 88.7vw;
-    height: 4vh;
-    font-size: 2vw;
+    width: 88vw;
+    /* height: 4vh; */
+    font-size: 20px;
+    margin: 5px;
     border: none;
     outline: none;
-    background-color: transparent
-    ;
+    background-color: transparent;
+    /* background-color: aqua; */
 }
 
 /* %%%%%%%%%%%% add emoji as comment on post css %%%%%%%%%%%%%% */
 .post-content .post-comment-section .add-emojies{
-    font-size: 1.8vw;
+    font-size: 18px;
     font-weight: 300;
-    margin-left: 3.8vw;
+    margin-left: 10px;
     position: relative;
     left: 0.8vw;
 
@@ -855,12 +861,12 @@ p a .username{
 /* ============= story-gallery css start here =========== */
 .story-gallery{
     width: 98vw;
-    height: 18vh;
+    height: 26vh;
     /* background-color: crimson; */
     border: 1px solid #dadada;
-    border-radius: 1vw;
-    margin: 1vh 1vw;
-    padding: 1.5vw 0;
+    border-radius: 10px;
+    margin: 12px 10px;
+    padding: 15px 0;
     display: flex;
     align-items: center;
     overflow-x: auto;
@@ -878,11 +884,11 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%%%%%%%% story div property css %%%%%%%%%%%%%%%%%% */
 .story{
-    width: 15vw;
-    height: 12vh;
+    width: 17vw;
+    height: 18vh;
     /* background-color: royalblue; */
-    margin: 1vw 1vw;
-    padding: 1vw;
+    margin: 8px;
+    padding: 8px;
 }
 
 /* %%%%%%%%%%%%%%%%%% story-gallery <a> tag css %%%%%%%%%%%%%%%%%% */
@@ -892,9 +898,9 @@ body::-webkit-scrollbar {
 }
 
 .story-gallery a img{
-    width: 12vw;
-    height: 12vw;
-    margin-top: 1vw;
+    width: 75px;
+    height: 75px;
+    margin: 10px 3px;
     border: white;
     box-shadow: 
     0 0 0 0.4vw white,
@@ -904,7 +910,7 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%%%%%%%% story username css %%%%%%%%%%%%%%%%%% */
 .story-gallery a p{
-    font-size: 1.8vw;
+    font-size: 15px;
     font-weight: 600;
     text-align: center;
 }
@@ -914,9 +920,9 @@ body::-webkit-scrollbar {
 /* %%%%%%%%%%%%%%%%%% post-content css %%%%%%%%%%%%%%%%%% */
 .post-content{
     width: 98vw;
-    margin: 5vw 1vw;
+    margin: 40px 8px;
     /* background-color: rosybrown; */
-    border-bottom: 0.1vw solid #9a9a9a;
+    border-bottom: 1px solid #9a9a9a;
 
 
 }
@@ -935,13 +941,13 @@ body::-webkit-scrollbar {
 .header-post-content a{
     text-decoration: none;
     color: black;
-    margin: 0.3vw;
+    margin: 3px;
 }
 
 /* %%%%%%%%%%%% user post profile pic css  %%%%%%%%%%%%% */
 .header-post-content img{
-    width: 8vw;
-    height: 8vw;
+    width: 50px;
+    height: 50px;
     border: white;
     box-shadow: 
     0 0 0 0.3vw white,
@@ -953,16 +959,16 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%% post usernams css  %%%%%%%%%%%%% */
 .header-post-content span{
-    font-size: 2vw;
+    font-size: 16px;
     font-weight: 500;
     
 }
 
 /* %%%%%%%%%%%% 3 verticall dots on header-post-content css  %%%%%%%%%%%%% */
 .header-post-content .vertical-dots{
-    font-size: 2.5vw;
+    font-size: 18px;
     position: relative;
-    left: 55vw;
+    left: 40vw;
 }
 
 /* %%%%%%%%%%%% post image css  %%%%%%%%%%%%% */
@@ -970,7 +976,7 @@ body::-webkit-scrollbar {
     width: 98vw;
     min-height: 50vh;
     max-height: 100vh;
-    border-radius: 0.4vw;
+    border-radius: 4px;
     
 }
 
@@ -990,31 +996,30 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for li tag  */
 .post-content li{
-    margin-right: 2vw;
-    font-size: 5vw;
+    margin: 0 15px;
+    font-size: 28px;
 }
 
 /* %%%%%%%%%%%% post share and save css %%%%%%%%%%%%% */
 .post-content li .share-save{
     position: relative;
-    left: 62.2vw;
+    left: 44vw;
     padding: 0 1vw;
 }
 
 /* %%%%%%%%%%%% number of likes on post css %%%%%%%%%%%%%% */
 .post-content .likes{
     display: inline;
-    margin-right: 0.5vw;
-    font-size: 2.5vw;
+    margin:0 15px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 /* %%%%%%%%%%%% number of superlikes on post css %%%%%%%%%%%%%% */
 .post-content .superlikes{
     display: inline;
-    
-    margin-left: 0.5vw;
-    font-size: 2.5vw;
+    margin:0 15px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -1026,9 +1031,9 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%%  img caption of post css %%%%%%%%%%%%%% */
 .post-content .caption img{
-    width: 6vw;
-    height: 6vw;
-    margin: 1vw 0;
+    width: 40px;
+    height: 40px;
+    margin: 10px 5px 0 15px;
     border: white;
     box-shadow: 
     0 0 0 0.25vw white,
@@ -1046,74 +1051,77 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%% caption username of post css %%%%%%%%%%%%%% */
 .post-content .caption .username{
-    margin: 0 1vw;
-    font-size: 2.5vw;
+    margin: 0 5px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 /* %%%%%%%%%%%% actual caption paragraph of post css %%%%%%%%%%%%%% */
 .post-content .caption p{
-    margin-top: 0;
-    margin-left: 0.5vw;
-    font-size: 2.5vw;
-    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 4px;
+    font-size: 18px;
+    font-weight: 350;
 }
 
 /* %%%%%%%%%%%% red more  post css %%%%%%%%%%%%%% */
 .post-content .more{
-    font-size: 2.5vw;
+    margin: 0 15px;
+    font-size: 18px;
     font-weight: 600;
     color: #9a9a9a;
+    color: black;
 }
 
 /* %%%%%%%%%%%% view all comments of post css %%%%%%%%%%%%%% */
 .post-content  .view-all-comment{
-    font-size: 2.2vw;
+    margin: 16px 15px;
+    font-size: 16px;
     font-weight: 600;
     color: #9a9a9a;
-    margin-top: 2vw;
+    color: black;
     
 }
 
 /* %%%%%%%%%%%% username of comment on post css %%%%%%%%%%%%%% */
 p a .username{
-    margin-right: 1vw;
-    font-size: 2.5vw;
+    margin: 18px 15px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 /* %%%%%%%%%%%% comment on post css %%%%%%%%%%%%%% */
 .post-content p .comment{
-    font-size: 2.5vw;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 350;
 }
 
 /* %%%%%%%%%%%% comment like on post css %%%%%%%%%%%%%% */
 .post-content .comment-like{
-    font-size: 2.5vw;
+    font-size: 18px;
     display: inline;
     position: relative;
-    left: 94.3vw;
-    bottom: 3vh;
+    left: 92vw;
+    
 }
 
 /* %%%%%%%%%%%% comment input of post css %%%%%%%%%%%%%% */
 .post-content .post-comment-section input{
-    width: 89.7vw;
-    height: 4vh;
-    font-size: 2.5vw;
+    width: 89vw;
+    margin: 5px;
+    font-size: 18px;
     border: none;
     outline: none;
-    background-color: transparent
-    ;
+    background-color: transparent;
+    /* background-color: aqua; */
 }
 
 
 /* %%%%%%%%%%%% add emoji as comment on post css %%%%%%%%%%%%%% */
 .post-content .post-comment-section .add-emojies{
-    font-size: 2.5vw;
+    font-size: 18px;
     font-weight: 300;
-    margin-left: 3.8vw;
+    margin-left: 4px;
 
 }
 
@@ -1129,12 +1137,12 @@ p a .username{
 /* ============= story-gallery css start here =========== */
 .story-gallery{
     width: 98vw;
-    height: 15vh;
+    height: 20vh;
     /* background-color: crimson; */
     border: 1px solid #dadada;
-    border-radius: 1vw;
-    margin: 1vh 1vw;
-    padding: 1.5vw 0;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 8px 0;
     display: flex;
     align-items: center;
     overflow-x: auto;
@@ -1154,11 +1162,11 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%%%%%%%% story div property css %%%%%%%%%%%%%%%%%% */
 .story{
-    width: 20vw;
-    height: 10vh;
+    width: 22vw;
+    height: 13vh;
     /* background-color: royalblue; */
-    margin: 1vw 1vw;
-    padding: 1vw;
+    margin: 5px;
+    padding: 5px;
 }
 
 /* %%%%%%%%%%%%%%%%%% story-gallery <a> tag css %%%%%%%%%%%%%%%%%% */
@@ -1169,9 +1177,9 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%%%%%%%% story img css %%%%%%%%%%%%%%%%%% */
 .story-gallery a img{
-    width: 16vw;
-    height: 16vw;
-    margin-top: 1vw;
+    width: 58px;
+    height: 58px;
+    margin: 1px;
     border: white;
     box-shadow: 
     0 0 0 0.6vw white,
@@ -1181,7 +1189,7 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%%%%%%%% story username css %%%%%%%%%%%%%%%%%% */
 .story-gallery a p{
-    font-size: 2.5vw;
+    font-size: 10px;
     font-weight: 600;
     text-align: center;
     
@@ -1191,9 +1199,9 @@ body::-webkit-scrollbar {
 /* %%%%%%%%%%%%%%%%%% post-content css %%%%%%%%%%%%%%%%%% */
 .post-content{
     width: 98vw;
-    margin: 5vw 1vw;
+    margin: 12 3;
     /* background-color: rosybrown; */
-    border-bottom: 0.1vw solid #9a9a9a;
+    border-bottom: 1px solid #9a9a9a;
 
 
 }
@@ -1212,13 +1220,13 @@ body::-webkit-scrollbar {
 .header-post-content a{
     text-decoration: none;
     color: black;
-    margin: 0.3vw;
+    margin: 2px;
 }
 
 /* %%%%%%%%%%%% user post profile pic css  %%%%%%%%%%%%% */
 .header-post-content img{
-    width: 12vw;
-    height: 12vw;
+    width: 40px;
+    height: 40px;
     border: white;
     box-shadow: 
     0 0 0 0.5vw white,
@@ -1230,25 +1238,25 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%% post usernams css  %%%%%%%%%%%%% */
 .header-post-content span{
-    font-size: 4vw;
+    font-size: 12px;
     font-weight: 500;
-    margin: 0 1vw;
+    margin: 0 2px;
     
 }
 
 /* %%%%%%%%%%%% 3 verticall dots on header-post-content css  %%%%%%%%%%%%% */
 .header-post-content .vertical-dots{
-    font-size: 5vw;
+    font-size: 12px;
     position: relative;
-    left: 19vw;
+    left: 8vw;
 }
 
 /* %%%%%%%%%%%% post image css  %%%%%%%%%%%%% */
 .post-content .post-img{
     width: 98vw;
-    min-height: 50vh;
+    min-height: 20vh;
     max-height: 100vh;
-    border-radius: 0.4vw;
+    border-radius: 1.5px;
     
 }
 
@@ -1270,22 +1278,22 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%% post likes superlikes commente share and save css %%%%%%%%%%%%% for li tag  */
 .post-content li{
-    margin-right: 3vw;
+    margin: 0 7px;
     font-size: 6vw;
 }
 
 /* %%%%%%%%%%%% post share and save css %%%%%%%%%%%%% */
 .post-content li .share-save{
     position: relative;
-    left: 53vw;
-    padding: 0 1vw;
+    left: 42vw;
+    padding: 0 2px;
 }
 
 /* %%%%%%%%%%%% number of likes on post css %%%%%%%%%%%%%% */
 .post-content .likes{
     display: inline;
-    margin-right: 0.5vw;
-    font-size: 5vw;
+    margin: 0 5px;
+    font-size: 12px;
     font-weight: 500;
 }
 
@@ -1293,8 +1301,8 @@ body::-webkit-scrollbar {
 /* %%%%%%%%%%%% number of superlikes on post css %%%%%%%%%%%%%% */
 .post-content .superlikes{
     display: inline;
-    margin-left: 0.5vw;
-    font-size: 5vw;
+    margin: 0 5px;
+    font-size: 12px;
     font-weight: 500;
 }
 
@@ -1306,9 +1314,9 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%%  img caption of post css %%%%%%%%%%%%%% */
 .post-content .caption img{
-    width: 8vw;
-    height: 8vw;
-    margin: 1vw 0;
+    width: 30px;
+    height: 30px;
+    margin: 2px 8px;
     border: white;
     box-shadow: 
     0 0 0 0.4vw white,
@@ -1327,77 +1335,81 @@ body::-webkit-scrollbar {
 
 /* %%%%%%%%%%%% caption username of post css %%%%%%%%%%%%%% */
 .post-content .caption .username{
-    margin: 0 1vw;
-    font-size: 4vw;
+    margin: 10px 2px;
+    font-size: 12px;
     font-weight: 500;
 }
 
 /* %%%%%%%%%%%% actual caption paragraph of post css %%%%%%%%%%%%%% */
 .post-content .caption p{
     margin-top: 0;
-    margin-left: 0.5vw;
-    font-size: 4vw;
+    margin-left: 2px;
+    font-size: 12px;
     font-weight: 400;
 }
 
 /* %%%%%%%%%%%% red more  post css %%%%%%%%%%%%%% */
 .post-content .more{
-    font-size: 4vw;
+    margin: 0 10px;
+    font-size: 12px;
     font-weight: 600;
     color: #9a9a9a;
+    /* color: black; */
 }
 
 /* %%%%%%%%%%%% view all comments of post css %%%%%%%%%%%%%% */
 .post-content  .view-all-comment{
-    font-size: 4vw;
+    margin: 0 10px;
+    font-size: 12px;
     font-weight: 600;
-    color: #9a9a9a;
-    margin-top: 2vw;
+    color: #9a9a9a; 
+    /* color: black; */
+    margin-top: 4px;
     
 }
 
 
 /* %%%%%%%%%%%% username of comment on post css %%%%%%%%%%%%%% */
 p a .username{
-    margin-right: 1vw;
-    font-size: 4vw;
+    margin: 0 10px;
+    font-size: 12px;
     font-weight: 500;
 }
 
 /* %%%%%%%%%%%% comment on post css %%%%%%%%%%%%%% */
 .post-content p .comment{
-    font-size: 4vw;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 350;
 }
+
 
 
 /* %%%%%%%%%%%% comment like on post css %%%%%%%%%%%%%% */
 .post-content .comment-like{
-    font-size: 4vw;
+    font-size: 12px;
     display: inline;
     position: relative;
-    left: 94vw;
-    bottom: 2.8vh;
+    left: 90vw;
 }
 
 
 /* %%%%%%%%%%%% comment input of post css %%%%%%%%%%%%%% */
 .post-content .post-comment-section input{
-    width: 88.7vw;
-    height: 4vh;
+    width: 86vw;
+    margin: 3px;
     font-size: 5vw;
     border: none;
     outline: none;
-    background-color: transparent
-    ;
+    background-color: transparent;
+    /* background-color: aqua; */
 }
 
 
 /* %%%%%%%%%%%% add emoji as comment on post css %%%%%%%%%%%%%% */
 .post-content .post-comment-section .add-emojies{
-    font-size: 3.5vw;
-    font-weight: 300;
-    margin-left: 3.8vw;
+    font-size: 12px;
+    font-weight: 350;
+    margin-left: 4px;
 
 }
 
